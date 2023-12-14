@@ -8,10 +8,21 @@ const redux = require('redux');
  * @return {Object} The updated state object with the count incremented by 1.
  */
 // * reducer function
+// * The dispatch function is used to dispatch an action to the store.
 const counterReducer = (state = { count: 0 }, action) => {
-    return {
-        count: state.count + 1
+    if(action.type === 'increment') {
+        return {
+            count: state.count + 1
+        }
     }
+    if(action.type === 'decrement') {
+        return {
+            count: state.count - 1
+        }
+    }
+
+    return state;
+
 }
 
 // * store
@@ -29,4 +40,7 @@ const counterSubscriber = () => {
 store.subscribe(counterSubscriber);
 
 // * dispatch an action
+// * The dispatch function is used to dispatch an action to the store.
+// * The dispatched action is then handled by the reducer function by updating the state based on the action type. 
 store.dispatch({ type: 'increment'});
+store.dispatch({ type: 'decrement'});
