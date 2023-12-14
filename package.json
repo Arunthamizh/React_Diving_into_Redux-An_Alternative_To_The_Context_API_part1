@@ -1,0 +1,23 @@
+{
+  "name": "react_diving_into_redux-an_alternative_to_the_context_api_part1",
+  "version": "1.0.0",
+  "description": "18 chapter redux starter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arunthamizh/React_Diving_into_Redux-An_Alternative_To_The_Context_API_part1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arunthamizh/React_Diving_into_Redux-An_Alternative_To_The_Context_API_part1/issues"
+  },
+  "homepage": "https://github.com/Arunthamizh/React_Diving_into_Redux-An_Alternative_To_The_Context_API_part1#readme",
+  "dependencies": {
+    "redux": "^5.0.0"
+  }
+}
